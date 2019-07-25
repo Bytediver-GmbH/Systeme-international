@@ -1,8 +1,3 @@
-import {Second} from "./base-units/second";
-import {Steradiant} from "./derived-units/steradiant";
-import {Metre} from "./base-units/metre";
+import {SPEED_OF_LIGHT} from "./constants";
 
-const sec = new Second(3);
-const st = new Steradiant(new Metre(3.996), new Metre(3));
-
-console.log(st);
+console.log(SPEED_OF_LIGHT.forSeconds(1e-6));
