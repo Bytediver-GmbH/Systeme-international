@@ -1,3 +1,3 @@
-import {SPEED_OF_LIGHT} from "./constants";
+import {PLANCK_CONSTANT} from "./constants";
 
-console.log(SPEED_OF_LIGHT.forSeconds(1e-6));
+console.log(PLANCK_CONSTANT.forSeconds(1));
