@@ -1,13 +1,14 @@
 {
 	"name": "systeme-international",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
-	"main": "index.js",
 	"scripts": {
 		"build": "tsc",
 		"prepare": "npm run build",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
+	"main": "dist/main.js",
+	"types": "dist/main.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Nano1237/Systeme-international.git"
