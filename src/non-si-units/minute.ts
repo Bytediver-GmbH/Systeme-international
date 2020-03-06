@@ -1,6 +1,6 @@
 import {NonSiUnit} from "./non-si-unit";
 
 export class Minute extends NonSiUnit {
-	public readonly symbol: 'min' = 'min';
-	public readonly quantity: 'time (SI unit multiple)' = 'time (SI unit multiple)';
+	public readonly symbol: string = "min";
+	public readonly quantity: string = "time (SI unit multiple)";
 }

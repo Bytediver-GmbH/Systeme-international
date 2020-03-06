@@ -2,8 +2,8 @@ import {DerivedUnit} from "./derived-unit";
 import {Metre} from "../base-units/metre";
 
 export class Radian extends DerivedUnit {
-	public readonly symbol: 'rad' = 'rad';
-	public readonly quantity: 'plane angle' = 'plane angle';
+	public readonly symbol: string = "rad";
+	public readonly quantity: string = "plane angle";
 
 	constructor(s: Metre, r: Metre) {
 		super(0);

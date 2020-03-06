@@ -1,6 +1,6 @@
 import {DerivedUnit} from "./derived-unit";
 
 export class Lux extends DerivedUnit {
-	public readonly symbol: 'lx' = 'lx';
-	public readonly quantity: 'lx' = 'lx';
+	public readonly symbol: string = "lx";
+	public readonly quantity: string = "lx";
 }

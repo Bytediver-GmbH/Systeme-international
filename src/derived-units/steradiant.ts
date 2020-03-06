@@ -2,8 +2,8 @@ import {DerivedUnit} from "./derived-unit";
 import {Metre} from "../base-units/metre";
 
 export class Steradiant extends DerivedUnit {
-	public readonly symbol: 'sr' = 'sr';
-	public readonly quantity: 'solid angle' = 'solid angle';
+	public readonly symbol: string = "sr";
+	public readonly quantity: string = "solid angle";
 
 	constructor(calotteArea: Metre, sphereRadius: Metre) {
 		super(0);

@@ -1,6 +1,6 @@
 import {DerivedUnit} from "./derived-unit";
 
 export class Henry extends DerivedUnit {
-	public readonly symbol: 'H' = 'H';
-	public readonly quantity: 'inductance' = 'inductance';
+	public readonly symbol: string = "H";
+	public readonly quantity: string = "inductance";
 }

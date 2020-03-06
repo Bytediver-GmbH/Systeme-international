@@ -8,8 +8,8 @@ export class Watt extends DerivedUnit {
 	 * @description
 	 * @type {string}
 	 */
-	public readonly symbol: 'W' = 'W';
-	public readonly quantity: 'radiant flux' = 'radiant flux';
+	public readonly symbol: string = "W";
+	public readonly quantity: string = "radiant flux";
 
 	constructor(kilogram: Kilogram, metre: Metre, second: Second) {
 		super(0);

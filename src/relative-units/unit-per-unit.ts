@@ -17,7 +17,7 @@ export abstract class UnitPerUnit<T extends Unit, K extends Unit> {
 	protected base: number = 0;
 
 	constructor(a: T | number, b?: K | number) {
-		const per = typeof b === 'undefined' ? 1 : b; // if b is not set, then use "1" instead
+		const per = typeof b === "undefined" ? 1 : b; // if b is not set, then use "1" instead
 		this.base = UnitPerUnit.toNumber(a) / UnitPerUnit.toNumber(per);
 	}
 
