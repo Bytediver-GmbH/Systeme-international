@@ -18,5 +18,8 @@
 	"bugs": {
 		"url": "https://github.com/Nano1237/Systeme-international/issues"
 	},
-	"homepage": "https://github.com/Nano1237/Systeme-international#readme"
+	"homepage": "https://github.com/Nano1237/Systeme-international#readme",
+	"devDependencies": {
+		"tslint": "^6.0.0"
+	}
 }
