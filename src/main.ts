@@ -7,6 +7,7 @@ export {Mole} from "./base-units/mole";
 export {Second} from "./base-units/second";
 
 export {Becquerel} from "./derived-units/becquerel";
+export {BohrMagneton} from "./derived-units/bohr-magneton";
 export {Coulomb} from "./derived-units/coulomb";
 export {Celsius} from "./derived-units/celsius";
 export {Farad} from "./derived-units/farad";
