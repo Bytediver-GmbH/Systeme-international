@@ -6,7 +6,8 @@
 	"jsRules": {},
 	"rules": {
 		"indent": false,
-		"eofline": false
+		"eofline": false,
+		"variable-name": false
 	},
 	"rulesDirectory": []
 }
