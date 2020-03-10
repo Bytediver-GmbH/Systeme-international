@@ -46,6 +46,7 @@ export {VoltAmpereReactive} from "./non-si-units/volt-ampere-reactive";
 
 export {FaradPerMetre} from "./relative-units/farad-per-metre";
 export {JoulesPerSecond} from "./relative-units/joules-per-second";
+export {JoulesPerTesla} from "./relative-units/joules-per-tesla";
 export {MetresPerSecond} from "./relative-units/metres-per-second";
 
 export {BOHR_RADIUS, PLANCK_CONSTANT, SPEED_OF_LIGHT, VACUUM_PERMITTIVITY} from "./constants";
