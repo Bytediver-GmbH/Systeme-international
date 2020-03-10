@@ -1,13 +1,12 @@
 export class Unit {
-	constructor(private _value: number) {
+	constructor(protected _value: number, protected exponent: number = 0) {
 	}
 
-
-	get value(): number {
+	public get value(): number {
 		return this._value;
 	}
 
-	set value(value: number) {
+	public set value(value: number) {
 		this._value = value;
 	}
 }
