@@ -4,22 +4,14 @@ import {UnitPerUnit} from "./unit-per-unit";
 
 export class MetresPerSecond extends UnitPerUnit<Metre, Second> {
 
-	constructor(metres: number, seconds?: number)
-	constructor(metres: number, seconds?: Second)
-	constructor(metres: Metre, seconds?: number)
-	constructor(metres: Metre, seconds?: Second)
 	constructor(metres: Metre | number, seconds?: Second | number) {
 		super(metres, seconds);
 	}
 
-	public forSeconds(seconds: number): Metre
-	public forSeconds(seconds: Second): Metre
 	public forSeconds(seconds: Second | number): Metre {
 		return new Metre(this.forB(seconds));
 	}
 
-	public forMetres(metres: number): Second
-	public forMetres(metres: Metre): Second
 	public forMetres(metres: Metre | number): Second {
 		return new Second(this.forA(metres));
 	}
