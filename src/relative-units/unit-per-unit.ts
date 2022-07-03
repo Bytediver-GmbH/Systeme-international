@@ -14,7 +14,7 @@ export abstract class UnitPerUnit<T extends Unit, K extends Unit> {
 	 * => 2 seconds for 5ms
 	 * @type {number}
 	 */
-	protected base: number = 0;
+	protected base = 0;
 
 	constructor(a: T | number, b?: K | number) {
 		const per = typeof b === "undefined" ? 1 : b; // if b is not set, then use "1" instead
