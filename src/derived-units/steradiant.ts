@@ -5,8 +5,15 @@ export class Steradiant extends DerivedUnit {
 	public readonly symbol: string = "sr";
 	public readonly quantity: string = "solid angle";
 
-	constructor(calotteArea: Metre, sphereRadius: Metre) {
+	constructor(value: number | Metre, sphereRadius?: Metre) {
 		super(0);
-		this.value = calotteArea.value / Math.pow(sphereRadius.value, 2);
+		if (typeof value === "number") {
+			this.value = value;
+		} else if (sphereRadius instanceof Metre) {
+			// Calculate from surface area (calotte) and sphere radius
+			this.value = value.value / Math.pow(sphereRadius.value, 2);
+		} else {
+			throw new Error("Invalid arguments for Steradiant constructor");
+		}
 	}
 }

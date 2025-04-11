@@ -5,8 +5,14 @@ export class Radian extends DerivedUnit {
 	public readonly symbol: string = "rad";
 	public readonly quantity: string = "plane angle";
 
-	constructor(s: Metre, r: Metre) {
+	constructor(value: number | Metre, radius?: Metre) {
 		super(0);
-		this.value = s.value / r.value;
+		if (typeof value === "number") {
+			this.value = value;
+		} else if (radius instanceof Metre) {
+			this.value = value.value / radius.value;
+		} else {
+			throw new Error("Invalid arguments for Radian constructor");
+		}
 	}
 }

@@ -8,7 +8,7 @@ export class JoulesPerTesla extends UnitPerUnit<Joule, Tesla> {
 		super(metres, tesla);
 	}
 
-	public forSeconds(tesla: Tesla | number): Joule {
+	public forTesla(tesla: Tesla | number): Joule {
 		return new Joule(this.forB(tesla));
 	}
 
